@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h5>Q1- Find the Smaller Angle?</h5>
+    <p>var Minimal_Angle = (h, m) => </p>
+        <p> {</p>
+            <p> h=h%12;   </p>
+               <p>  let a=(h*360)/12+(m*360)/(12*60);</p>
+                  <p> let b=(m*360)/(60);</p>
+                  <p> let ans=Math.abs(a-b);</p>
+                  <p> if(ans>180){</p>
+                    <p>  ans=360-ans;</p>
+                    <p>}</p>
+                  <p>   return ans;</p>
+                  <p> };</p>
+        <h5>Q2- Check whether the year is Leap year or not.</h5>
+        <p>var Check_Leap = (year) => </p>
+            <p> {</p>
+                <p> if((year%4===0) && (year%100!==0)){</p>
+                <p>  return 'Leap Year';</p>
+                   <p>  }</p>
+                 <p> else if(year%400===0){</p>
+                    <p>   return 'Leap Year';</p>
+                   <p> }</p>
+                 <p> else{</p>
+                    <p>  return 'Non Leap Year';</p>
+                   <p> }</p>
+                 <p> };</p>
+            <h5>Q3- Perfect Number Check.</h5>
+            <p>var Perfect_Check = (N) => </p>
+                <p> {</p>
+                    <p>  if(N===1){</p>
+                        <p>  return 'YES';</p>
+                        <p> }     </p>
+                      <p> let sum=0;</p>
+                      <p> for(let i=0;i<=(N/2);i++){</p>
+                        <p> if(N%i===0){</p>
+                            <p>   sum=sum+i;</p>
+                          <p>   }</p>
+                        <p> }</p>
+                      <p> if(sum!==0 && N===sum){</p>
+                        <p>  return 'YES';</p>
+                        <p>  }</p>
+                      <p>  else{</p>
+                        <p> return 'NO';</p>
+                        <p>  }</p>
+                      <p> };</p>
+                <h5>Q4- Reverse a Number.</h5></p>
+                <p>var Reverse_Number = (N) => </p>
+                    {</p>
+                      
+                        <p>let ans=0;</p>
+                     <p> while(N9!==0){</p>
+                            <p> let rev=N%10; </p>
+                           <p>  ans=ans*10+rev;</p>
+                           <p> N=Math.floor(N/10);</p>
+                           <p>  }</p>
+                          <p>      return ans;</p>
+                            <p> };</p>
+                    <h5>Q5- Substring Check.</h5>
+                    <p>var Substring_Check = (S1, S2) =></p> 
+                        <p>   {</p>
+                            <p>   if(S1.includes(S2)){</p>
+                                <p>  return 'YES';</p>
+                            <p>    }</p>
+                            <p>   else{</p>
+                                <p>  return 'NO';</p>
+                            <p>   }</p>
+                            <p>  };</p>
+</body>
+</html>
